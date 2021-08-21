@@ -4,6 +4,11 @@ EFGH
 IJKL
 MNOP
 QRST
+<<<<<<< HEAD
 123456
 UVWXYZ
 
+=======
+UVWX
+YZ
+>>>>>>> 748b504da99478c78f0903c8b3ad5e6da6c9d259
