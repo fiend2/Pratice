@@ -1,0 +1,25 @@
+<project name="pen" basedir="." default="main">
+
+
+<target name="one">
+	<echo>this is one</echo>
+	<echo message="THIS IS ONE"/>
+</target>
+
+<target name="two">
+	<echo>this is two</echo>
+	<echo message="THIS IS TWO"/>
+</target>
+
+<target name="three">
+	<echo>this is three</echo>
+<!--	<echo message="THIS IS THREE"/> -->
+</target>
+
+<target name="main" depends="one,two,three">
+	<echo>calling main</echo>
+</target>
+
+
+
+</project>
