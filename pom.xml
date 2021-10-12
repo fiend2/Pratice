@@ -102,7 +102,7 @@
    <repository>
       <id>nexus</id>
 	  <name>snapshot</name>
-      <url>http://35.167.77.228:8081/#browse/browse:maven-snapshots</url>
+      <url>http://35.167.77.228:8081/repository/Jenkins/</url>
    </repository>
 </distributionManagement>
 </project>
