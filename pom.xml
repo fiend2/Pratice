@@ -98,7 +98,6 @@
       </plugins>
     </pluginManagement>
   </build>
-  <!--
   <distributionManagement>
    <repository>
       <id>nexus</id>
@@ -106,5 +105,4 @@
       <url>http://localhost:8081/repository/snapshot</url>
    </repository>
 </distributionManagement>
-  -->
 </project>
