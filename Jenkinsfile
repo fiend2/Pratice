@@ -8,11 +8,12 @@ pipeline {
   
   
   
-    stage('Build') {
+   /* stage('Build') {
 	  steps {
 	    build 'testing_pipeline'
 	    echo "Build"
 	}
+	*/
   }
   }
   
