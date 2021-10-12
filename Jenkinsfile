@@ -9,13 +9,18 @@ pipeline {
   
   
   
+<<<<<<< HEAD
    stage('compile stage') {
+=======
+   stage('Build') {
+>>>>>>> f46dcbf7e102fd62df1a4598feb2e153cebf7ccb
 	  steps {
 	    with maven (maven : 'maven_3.8.3') {
 		  sh 'mvn clean compile'
 		}
 	}
   }
+<<<<<<< HEAD
   stage('testing') {
 	  steps {
 	    with maven (maven : 'maven_3.8.3') {
@@ -34,3 +39,8 @@ pipeline {
   }
   }
   
+=======
+  }  
+}
+
+>>>>>>> f46dcbf7e102fd62df1a4598feb2e153cebf7ccb
