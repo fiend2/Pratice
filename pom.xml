@@ -102,7 +102,7 @@
    <repository>
       <id>nexus</id>
 	  <name>snapshot</name>
-      <url>http://35.167.77.228:8081/repository/Jenkins/</url>
+      <url>http://52.13.202.61:8081/repository/jenkins2/</url>
    </repository>
 </distributionManagement>
 </project>
