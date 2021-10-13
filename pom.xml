@@ -98,13 +98,11 @@
       </plugins>
     </pluginManagement>
   </build>
-  
   <distributionManagement>
    <repository>
       <id>nexus</id>
 	  <name>snapshot</name>
-      <url>http://localhost:8081/repository/snapshot</url>
+      <url>http://54.202.188.207:8081/repository/Jenkins3/</url>
    </repository>
 </distributionManagement>
-  
 </project>
