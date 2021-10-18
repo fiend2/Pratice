@@ -112,10 +112,10 @@
       <url>http://18.237.21.104:8081/repository/jenkins2/</url>
    </repository>
    
-   <snapshotrepository>
+   <snapshotRepository>
       <id>nexus</id>
 	  <name>Snapshot</name>
 	  <url>http://18.237.21.104:8081/repository/Jenkins3/</url>
-   </snapshotrepository>
+   </snapshotRepository>
 </distributionManagement>
 </project>
