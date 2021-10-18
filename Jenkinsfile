@@ -26,7 +26,7 @@ pipeline {
 		  sh 'mvn deploy'
 	}
   }
-   stage('Upload War To Nexus') {
+ /*  stage('Upload War To Nexus') {
 	  steps {
 		  nexusArtifactUploader credentialsId: 'nexus3', 
 		  groupId: 'Steam', 
@@ -37,5 +37,6 @@ pipeline {
 		  version: '1.0.0'
   }
   }
+  */
   }
   }
