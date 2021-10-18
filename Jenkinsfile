@@ -24,8 +24,7 @@ pipeline {
 
 	stage('SonarQube analysis') {
 	steps {
-              withSonarQubeEnv('My SonarQube Server') {
-			  credentialsId: '5f8fbb3c7fd0ba8be7f5d453dfe48fbd84867dd3'
+              withSonarQubeEnv('sonar_7.1') {
               sh 'mvn clean package sonar:sonar'
 			  }
 		}
