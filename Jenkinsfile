@@ -37,6 +37,16 @@ pipeline {
 		  sh 'mvn deploy'
 	}
   }
+   stage('Upload War To Nexus') {
+	  steps {
+		  nexusArtifactUploader credentialsId: 'nexus3', 
+		  groupId: 'Steam', 
+		  nexusUrl: '18.237.21.104', 
+		  nexusVersion: 'nexus3', 
+		  protocol: 'http', 
+		  repository: 'target/Dota', 
+		  version: '1.0.0'
   }
   }
-  
+  }
+  }
