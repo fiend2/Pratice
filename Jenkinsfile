@@ -20,22 +20,21 @@ pipeline {
 	  steps {
 		  sh 'mvn test'
 	}
-  }																												
+  }					
+
+	stage('SonarQube analysis') {
+	steps {
+              withSonarQubeEnv('My SonarQube Server') {
+			  credentialsId: '4a1558db7d4aad3111bd4113dc0422cbfacf494f'
+              sh 'mvn clean package sonar:sonar'
+			  }
+		}
+	}
+	   
   stage('deployment') {
 	  steps {
 		  sh 'mvn deploy'
 	}
-  }
-   stage('Upload War To Nexus') {
-	  steps {
-		  nexusArtifactUploader credentialsId: 'nexus_added', 
-		  groupId: 'Steam', 
-		  nexusUrl: '18.237.21.104:8081', 
-		  nexusVersion: 'nexus3', 
-		  protocol: 'http', 
-		  repository: 'target/Dota', 
-		  version: '1.0.0'
-  }
   }
   }
   }
