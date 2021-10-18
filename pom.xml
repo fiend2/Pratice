@@ -108,8 +108,15 @@
   <distributionManagement>
    <repository>
       <id>nexus</id>
+	  <name>release</name>
       <url>http://18.237.21.104:8081/repository/jenkins2/</url>
 	 <!-- <url>http://18.237.21.104:8081/repository/Jenkins3/</url>  -->
+   </repository>
+   
+   <repository>
+      <id>nexus</id>
+	  <name>snapshot</name>
+	  <url>http://18.237.21.104:8081/repository/Jenkins3/</url>
    </repository>
 </distributionManagement>
 </project>
