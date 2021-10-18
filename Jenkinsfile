@@ -30,7 +30,7 @@ pipeline {
 	  steps {
 		  nexusArtifactUploader credentialsId: 'nexus', 
 		  groupId: 'Steam', 
-		  nexusUrl: '18.237.21.104', 
+		  nexusUrl: '18.237.21.104:8081', 
 		  nexusVersion: 'nexus3', 
 		  protocol: 'http', 
 		  repository: 'target/Dota', 
