@@ -113,7 +113,7 @@
    </repository>
    
    <snapshotrepository>
-      <id>jenkins3</id>
+      <id>nexus</id>
 	  <name>Jenkins2</name>
 	  <url>http://18.237.21.104:8081/repository/Jenkins3/</url>
    </snapshotrepository>
