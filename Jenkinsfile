@@ -28,7 +28,7 @@ pipeline {
   }
    stage('Upload War To Nexus') {
 	  steps {
-		  nexusArtifactUploader credentialsId: 'nexus', 
+		  nexusArtifactUploader credentialsId: 'nexus3', 
 		  groupId: 'Steam', 
 		  nexusUrl: '18.237.21.104:8081', 
 		  nexusVersion: 'nexus3', 
